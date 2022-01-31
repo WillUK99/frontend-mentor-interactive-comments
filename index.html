@@ -1,14 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Commentor</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="https://kit.fontawesome.com/55eb5fddfa.js" crossorigin="anonymous"></script>
     <script defer src="./app.js"></script>
 </head>
+
 <body>
-    <h1>Hello world</h1>
+    <!-- main container -->
+    <main class="commentSection">
+
+        <!-- individual comment -->
+        <div class="comment comment--mainThread">
+            <!-- voting toggles -->
+            <div class="comment__voting">
+                <button class="comment__upvote">+</button>
+                <strong class="comment__totalUpvotes text--blue">12</strong>
+                <button class="comment__downvote">-</button>
+            </div>
+
+            <!-- comment body -->
+            <div class="comment__body">
+                <div class="comment__details">
+                    <div class="comment__userInfo">
+                        <div class="comment__userImage">
+                            <img class="user--image" src="./images/avatars/image-amyrobson.webp" alt="A users image">
+                        </div>
+                        <strong class="comment__user">amyrobson</strong>
+                        <p class="comment__duration">1 month ago</p>
+                    </div>
+                    <button class="comment__reply text--blue"><i class="fas fa-reply"></i> Reply</button>
+                </div>
+                <p class="comment__text">
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Reiciendis dicta fuga
+                    inventore ut ea iusto vero maiores asperiores ad architecto vel dignissimos, voluptatem, itaque non
+                    ab.
+                </p>
+            </div>
+        </div>
+
+        <!-- individual comment -->
+        <div class="comment comment--mainThread">
+            <!-- voting toggles -->
+            <div class="comment__voting">
+                <button class="comment__upvote">+</button>
+                <strong class="comment__totalUpvotes text--blue">5</strong>
+                <button class="comment__downvote">-</button>
+            </div>
+
+            <!-- comment body -->
+            <div class="comment__body">
+                <div class="comment__details">
+                    <div class="comment__userInfo">
+                        <div class="comment__userImage">
+                            <img class="user--image" src="./images/avatars/image-maxblagun.webp" alt="A users image">
+                        </div>
+                        <strong class="comment__user">maxblagun</strong>
+                        <p class="comment__duration">1 month ago</p>
+                    </div>
+                    <button class="comment__reply text--blue"><i class="fas fa-reply"></i> Reply</button>
+                </div>
+                <p class="comment__text">
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Reiciendis dicta fuga
+                    inventore ut ea iusto vero maiores asperiores ad architecto vel dignissimos, voluptatem, itaque non
+                    ab.
+                </p>
+            </div>
+        </div>
+
+         <!-- individual comment -->
+         <div class="comment comment--subThread">
+            <!-- voting toggles -->
+            <div class="comment__voting">
+                <button class="comment__upvote">+</button>
+                <strong class="comment__totalUpvotes text--blue">5</strong>
+                <button class="comment__downvote">-</button>
+            </div>
+
+            <!-- comment body -->
+            <div class="comment__body">
+                <div class="comment__details">
+                    <div class="comment__userInfo">
+                        <div class="comment__userImage">
+                            <img class="user--image" src="./images/avatars/image-ramsesmiron.webp" alt="A users image">
+                        </div>
+                        <strong class="comment__user">ramsesmiron</strong>
+                        <p class="comment__duration">1 month ago</p>
+                    </div>
+                    <button class="comment__reply text--blue"><i class="fas fa-reply"></i> Reply</button>
+                </div>
+                <p class="comment__text">
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Reiciendis dicta fuga
+                    inventore ut ea iusto vero maiores asperiores ad architecto vel dignissimos, voluptatem, itaque non
+                    ab.
+                </p>
+            </div>
+        </div>
+
+        <!-- individual comment -->
+        <div class="comment comment--subThread">
+            <!-- voting toggles -->
+            <div class="comment__voting">
+                <button class="comment__upvote">+</button>
+                <strong class="comment__totalUpvotes text--blue">5</strong>
+                <button class="comment__downvote">-</button>
+            </div>
+
+            <!-- comment body -->
+            <div class="comment__body">
+                <div class="comment__details">
+                    <div class="comment__userInfo">
+                        <div class="comment__userImage">
+                            <img class="user--image" src="./images/avatars/image-juliusomo.webp" alt="A users image">
+                        </div>
+                        <strong class="comment__user">joewill</strong>
+                        <p class="comment__duration">1 month ago</p>
+                    </div>
+                    <button class="comment__reply text--blue"><i class="fas fa-reply"></i> Reply</button>
+                </div>
+                <p class="comment__text">
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Reiciendis dicta fuga
+                    inventore ut ea iusto vero maiores asperiores ad architecto vel dignissimos, voluptatem, itaque non
+                    ab.
+                </p>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
