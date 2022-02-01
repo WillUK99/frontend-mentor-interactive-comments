@@ -1,0 +1,43 @@
+@import "../abstracts/variables";
+
+strong,
+.text--bold {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 300;
+}
+
+.text--blue {
+    color: $primModBlue;
+}
+
+.text--red {
+    color: $primSoftRed;
+}
+
+.comment__duration {
+    color: $neutGreyBlue;
+}
+
+.loz--tag {
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.comment__upvote,
+.comment__downvote {
+    color: $primGreyBlue;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.comment__reply,
+.comment__ownOptions {
+    font-size: 0.9rem;
+    button {
+        font-size: 0.9rem;
+    }
+}
