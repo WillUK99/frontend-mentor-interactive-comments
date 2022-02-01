@@ -1,5 +1,12 @@
 @import "../abstracts/variables";
 
+form {
+    button {
+        font-weight: 600;
+        color: white;
+    }
+}
+
 strong,
 .text--bold {
     font-weight: 600;
