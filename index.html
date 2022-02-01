@@ -34,7 +34,7 @@
                         <strong class="comment__user">amyrobson</strong>
                         <p class="comment__duration">1 month ago</p>
                     </div>
-                    <button class="comment__reply text--blue"><i class="fas fa-reply"></i> Reply</button>
+                    <button class="comment__reply text--blue text--bold"><i class="fas fa-reply"></i> Reply</button>
                 </div>
                 <p class="comment__text">
                     Lorem ipsum dolor sit amet consectetur
@@ -64,7 +64,7 @@
                         <strong class="comment__user">maxblagun</strong>
                         <p class="comment__duration">1 month ago</p>
                     </div>
-                    <button class="comment__reply text--blue"><i class="fas fa-reply"></i> Reply</button>
+                    <button class="comment__reply text--blue text--bold"><i class="fas fa-reply"></i> Reply</button>
                 </div>
                 <p class="comment__text">
                     Lorem ipsum dolor sit amet consectetur
@@ -94,7 +94,7 @@
                         <strong class="comment__user">ramsesmiron</strong>
                         <p class="comment__duration">1 month ago</p>
                     </div>
-                    <button class="comment__reply text--blue"><i class="fas fa-reply"></i> Reply</button>
+                    <button class="comment__reply text--blue text--bold"><i class="fas fa-reply"></i> Reply</button>
                 </div>
                 <p class="comment__text">
                     Lorem ipsum dolor sit amet consectetur
@@ -121,10 +121,13 @@
                         <div class="comment__userImage">
                             <img class="user--image" src="./images/avatars/image-juliusomo.webp" alt="A users image">
                         </div>
-                        <strong class="comment__user">joewill</strong>
+                        <strong class="comment__user">joewill <span class="loz--tag">you</span></strong>
                         <p class="comment__duration">1 month ago</p>
                     </div>
-                    <button class="comment__reply text--blue"><i class="fas fa-reply"></i> Reply</button>
+                    <div class="comment__ownOptions">
+                        <button class="comment__delete text--red text--bold"><i class="fas fa-trash"></i>Delete</button>
+                        <button class="comment__edit text--blue text--bold"><i class="fas fa-pen"></i>Edit</button>
+                    </div>
                 </div>
                 <p class="comment__text">
                     Lorem ipsum dolor sit amet consectetur
@@ -139,11 +142,10 @@
             <div class="addComment__userImage">
                 <img class="user--image" src="./images/avatars/image-juliusomo.webp" alt="A users image">
             </div>
-            <form action="#" method="post">
+            <form action="#">
                 <textarea name="commentArea" id="commentArea" placeholder="Add a comment here..."></textarea>
-                <button type="submit">Send</button>
+                <button type="submit">SEND</button>
             </form>
-            button.
         </div>
     </main>
 </body>

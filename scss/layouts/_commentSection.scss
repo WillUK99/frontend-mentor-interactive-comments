@@ -1,0 +1,11 @@
+@import "../abstracts/mixins";
+@import "../abstracts/functions";
+
+.commentSection {   
+    @include flex--center;
+    flex-flow: column nowrap;
+    padding: 2rem 0;
+    gap: 1rem;
+    width: 95%;
+    max-width: pxToRem(900);
+}

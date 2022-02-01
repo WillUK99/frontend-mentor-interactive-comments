@@ -1,0 +1,18 @@
+@mixin push--auto {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+@mixin flex--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

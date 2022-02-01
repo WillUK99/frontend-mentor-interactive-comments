@@ -1,0 +1,13 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+body {
+    @include flex--center;
+    background-color: $neutVLightGrey;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
