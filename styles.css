@@ -61,12 +61,22 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f5f6fa;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 2rem;
 }
 
 button {
   border: none;
   background: none;
   cursor: pointer;
+}
+
+form button {
+  font-weight: 600;
+  color: white;
 }
 
 strong,
@@ -114,7 +124,11 @@ p {
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+
+form textarea {
+  font-family: "Rubik", sans-serif;
 }
 
 .commentSection {
@@ -134,12 +148,12 @@ body {
   padding: 2rem 0;
   gap: 1rem;
   width: 95%;
-  max-width: 56.25rem;
+  max-width: 43.75rem;
 }
 
 .comment {
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
   -webkit-filter: drop-shadow(0px 0px 1px #eaecf1);
           filter: drop-shadow(0px 0px 1px #eaecf1);
   padding: 1rem;
@@ -174,7 +188,7 @@ body {
   height: 100%;
   width: 1px;
   top: 0;
-  left: -10px;
+  left: -5%;
   background-color: #eaecf1;
 }
 
@@ -197,6 +211,15 @@ body {
   border-radius: 10px;
 }
 
+.comment__upvote, .comment__downvote {
+  -webkit-transition: 0.15s cubic-bezier(0.23, 1, 0.32, 1) all;
+  transition: 0.15s cubic-bezier(0.23, 1, 0.32, 1) all;
+}
+
+.comment__upvote:hover, .comment__downvote:hover {
+  color: #5457b6;
+}
+
 .comment__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -206,6 +229,10 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1rem;
+}
+
+.comment__body p {
+  line-height: 1.3;
 }
 
 .comment__userInfo {
@@ -230,6 +257,139 @@ body {
 }
 
 .comment__reply i, .comment__ownOptions i {
+  -webkit-transition: 0.15s cubic-bezier(0.23, 1, 0.32, 1) all;
+  transition: 0.15s cubic-bezier(0.23, 1, 0.32, 1) all;
   padding-right: 6px;
+}
+
+.comment__reply:hover i {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.comment__ownOptions button i {
+  -webkit-transition: 0.15s cubic-bezier(0.23, 1, 0.32, 1) all;
+  transition: 0.15s cubic-bezier(0.23, 1, 0.32, 1) all;
+}
+
+.comment__ownOptions button:hover i {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+@media (min-width: 768px) {
+  .comment {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 2rem 1.5rem;
+  }
+  .comment__voting {
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .comment__reply, .comment__ownOptions {
+    bottom: unset;
+    top: 2rem;
+  }
+}
+
+.addComment {
+  background-color: white;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(0px 0px 1px #eaecf1);
+          filter: drop-shadow(0px 0px 1px #eaecf1);
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.addComment__userImage {
+  position: absolute;
+  bottom: 1rem;
+}
+
+.addComment__userImage img {
+  max-width: 35px;
+}
+
+.addComment form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 1rem;
+}
+
+.addComment form textarea {
+  width: 100%;
+  resize: none;
+  padding: 1rem;
+  border: 1px solid #eaecf1;
+  border-radius: 10px;
+}
+
+.addComment form textarea:focus, .addComment form textarea:active {
+  outline: 2px solid #5457b6;
+}
+
+.addComment form button {
+  background: #5457b6;
+  padding: 15px 20px;
+  border-radius: 10px;
+  -webkit-transition: 0.1s cubic-bezier(0.23, 1, 0.32, 1) all;
+  transition: 0.1s cubic-bezier(0.23, 1, 0.32, 1) all;
+}
+
+.addComment form button:hover {
+  background: #c3c4ef;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+@media (min-width: 768px) {
+  .addComment {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .addComment__userImage {
+    position: relative;
+    bottom: unset;
+  }
+  .addComment form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

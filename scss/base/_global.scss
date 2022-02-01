@@ -4,6 +4,8 @@
 body {
     @include flex--center;
     background-color: $neutVLightGrey;
+    flex-direction: column;
+    padding-bottom: 2rem;
 }
 
 button {
